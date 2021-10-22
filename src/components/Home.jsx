@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-
+import React from "react";
+import "../scss/hero.scss";
 import Image from "../assets/img/mountains.jpg";
 
 const heroStyle = {
@@ -14,10 +14,12 @@ const heroStyle = {
 function Home() {
   return (
     <div style={heroStyle}>
-      <h2>My Name is Mia</h2>
-      <p>
-        I am a visual Designer who fell <span>in love with code!</span>
-      </p>
+      <div className="heroContainer">
+        <h2>My Name is Mia</h2>
+        <h3>
+          I am a visual Designer who fell <span>in love with code!</span>
+        </h3>
+      </div>
     </div>
   );
 }

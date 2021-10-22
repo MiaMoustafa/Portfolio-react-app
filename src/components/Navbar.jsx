@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import About from "../pages/About";
 import Home from "./Home";
@@ -27,9 +22,7 @@ function Header() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="justify-content-end" style={{ width: "90%" }}>
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link className="pl-2" href="/contact">
-                  Contact
-                </Nav.Link>
+                <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/about">About </Nav.Link>
               </Nav>
             </Navbar.Collapse>
