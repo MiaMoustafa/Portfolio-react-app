@@ -1,0 +1,33 @@
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: #9f5959;
+  // display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  .nav-link {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  img {
+    margin-left: 50px;
+  }
+
+  .links {
+    color: white;
+    font-size: 18px;
+    padding-right: 20px;
+    text-decoration: none;
+    &:hover {
+      color: #f0b8b4;
+    }
+  }
+}
+.navbar-toggler {
+  margin-right: 30px;
+}

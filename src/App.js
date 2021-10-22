@@ -1,12 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from "react";
+import { BrowserRouter, Router, Route, Switch } from "react-router-dom";
+import "./scss/style.scss";
+import Main from "./components/main";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Getting Started!!</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <Main />
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
