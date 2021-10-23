@@ -6,8 +6,7 @@ import Home from "./Home";
 import Contact from "../pages/Contact";
 // import { NavLink } from "react-router-dom";
 import logo from "../assets/png/logoWhite.png";
-
-import "../scss/navbar.scss";
+import "../scss/_navbar.scss";
 
 function Header() {
   return (
