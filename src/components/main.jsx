@@ -15,12 +15,12 @@ class Main extends Component {
     return (
       <div>
         <Navbar />
-        {/* <Home /> */}
+        <Home />
 
-        <Switch>
+        {/* <Switch>
           <Route path="/home" component={Home} />
           <Redirect to="/home" />
-        </Switch>
+        </Switch> */}
       </div>
     );
   }

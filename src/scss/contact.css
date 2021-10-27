@@ -1,0 +1,15 @@
+.contactContainer {
+  width: 90%;
+  height: 70vh;
+  padding-top: 200px;
+  background-color: red;
+}
+
+.form {
+  padding: 1em;
+}
+
+label {
+  font-weight: 600;
+}
+/*# sourceMappingURL=contact.css.map */

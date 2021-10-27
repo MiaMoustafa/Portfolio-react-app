@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/_hero.scss";
+import "../scss/hero.scss";
 import Image from "../assets/img/mountains.jpg";
 
 const heroStyle = {

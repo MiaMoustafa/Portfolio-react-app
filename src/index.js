@@ -5,13 +5,15 @@ import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import App from "./App";
-
+import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
+import { Routes } from "./routes";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Routes />
+  </Router>,
+
   document.getElementById("root")
 );
 
