@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.aboutMe {
+  width: 100%;
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  h2 {
+    font-size: 2em;
+    color: $secondaryColor;
+  }
+  h3 {
+    font-size-adjust: 1.4em;
+    color: $secondaryColor;
+  }
+  h5 {
+    font-size-adjust: 1.2em;
+    color: $secondaryColor;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  li {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  img {
+    width: 250px;
+    width: 250px;
+  }
+}
