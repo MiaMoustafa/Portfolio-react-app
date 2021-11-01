@@ -2,6 +2,12 @@
 
 .mainGrid {
   width: 100%;
+  padding: 30px;
   padding-top: 10%;
   background-color: $primaryLight;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
 }

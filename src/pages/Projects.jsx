@@ -1,24 +1,26 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { projects } from "../data/projects";
+import Illuminate from "../assets/img/illuminate.png";
 import "../scss/grid.scss";
+import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
-export default function Projects(props) {
-  return (
-    <div id="projects">
-      <Container className="mainGrid">
-        <Row>
-          <div className="flex flex-col w-full mb-20">
-            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-              Projects I've Built
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Explicabo facilis repellat ab cupiditate alias vero aliquid
-              obcaecati quisquam fuga dolore.
-            </p>
-          </div>
-          <div className="flex flex-wrap -m-4">
+const Projects = (props) => (
+  <div key={props.id} className="col-md-4 col-sm-12 pb-2">
+    <Card>
+      <CardImg src={props.image} alt={props.title} />
+      <CardBody>
+        <CardTitle
+          style={{ color: "#d98882", fontWeight: "600", fontSize: "1.2em" }}
+        >
+          {props.title}
+        </CardTitle>
+        <CardText>{props.description}</CardText>
+      </CardBody>
+    </Card>
+  </div>
+
+  /* <div className="flex flex-wrap -m-4">
             {projects.map((project) => (
               <a
                 href={project.link}
@@ -40,9 +42,7 @@ export default function Projects(props) {
                 </div>
               </a>
             ))}
-          </div>
-        </Row>
-      </Container>
-    </div>
-  );
-}
+          </div> */
+);
+
+export default Projects;

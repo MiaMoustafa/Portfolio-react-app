@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     id: 0,
     title: "illuminate Health",
-    image: "./illuminate.png",
+    image: "../assets/illuminate.png",
     link: "https://illuminate.health",
     description:
       "illuminate Health Inc is a Digital Health Startup focused on safe and accurate medication self-administration. Illuminate Health guides patients to organize complex medication schedules and provides vital communication tools.",

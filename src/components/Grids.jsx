@@ -1,6 +1,7 @@
 import { Row } from "reactstrap";
 import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 import Projects from "../pages/Projects";
+import "../scss/grid.scss";
 // function RenderImg({ project }) {
 //   return (
 //     <Card>
@@ -41,10 +42,15 @@ const Grids = (props) => {
   ];
 
   return (
-    <div className="container">
+    <div className="mainGrid">
       <div className="row">
         {grids.map((grid) => (
-          <Projects grid={grid} />
+          <Projects
+            title={grid.title}
+            link={grid.link}
+            image={grid.image}
+            description={grid.description}
+          />
         ))}
       </div>
     </div>
