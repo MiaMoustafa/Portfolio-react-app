@@ -77,4 +77,9 @@
   label {
     font-weight: 600;
   }
+  .formgroup .btn {
+    margin-top: 15px;
+    border: 1px solid $primaryColor;
+    margin-left: 0;
+  }
 }

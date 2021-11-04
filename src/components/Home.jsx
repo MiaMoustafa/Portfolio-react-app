@@ -1,6 +1,7 @@
 import React from "react";
 import "../scss/hero.scss";
 import Image from "../assets/img/mountains.jpg";
+import AnimatedText from "./animatedText";
 
 const heroStyle = {
   width: "100vw",
@@ -15,10 +16,7 @@ function Home() {
   return (
     <div style={heroStyle}>
       <div className="heroContainer">
-        <h2>My Name is Mia</h2>
-        <h3>
-          I am a visual Designer who fell <span>in love with code!</span>
-        </h3>
+        <AnimatedText />
       </div>
     </div>
   );

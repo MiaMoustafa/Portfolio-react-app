@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/contact.scss";
-import { Row, Col, FormGroup, Input } from "reactstrap";
+import { Row, Col, FormGroup, Input, Button } from "reactstrap";
 
 const Contact = (props) => {
   return (
@@ -50,6 +50,11 @@ const Contact = (props) => {
                     type="textarea"
                     placeholder="Message"
                   ></Input>
+                </FormGroup>
+              </Col>
+              <Col md={3}>
+                <FormGroup className="formgroup">
+                  <Button type="submit">Submit</Button>
                 </FormGroup>
               </Col>
             </Row>
